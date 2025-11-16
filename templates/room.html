@@ -41,7 +41,7 @@
 </div>
 
 <script type="text/javascript">
-  var socketio = io();
+  var socketio = io("https://quickchatpython.onrender.com");
 
   const messagesContainer = document.getElementById("messages");
 
@@ -91,3 +91,4 @@
 </script>
 {% endfor %}
 {% endblock %}
+
