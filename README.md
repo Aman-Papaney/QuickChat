@@ -1,5 +1,5 @@
 
-QuickChat — Python Live Chat App
+# QuickChat — Python Live Chat App
 
   
 
@@ -7,7 +7,7 @@ Modern, minimal real-time chat application built with Flask and WebSockets. Quic
 
   
 
-Key goals:
+## Key goals:
 
   
 
