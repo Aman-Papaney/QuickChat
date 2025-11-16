@@ -13,7 +13,7 @@ app.config["SECRET_KEY"] = os.getenv("SECRET_KEY")
 socketio = SocketIO(
     app,
     cors_allowed_origins="*",
-    message_queue=os.getenv("redisURI")  
+    #message_queue=os.getenv("redisURI")  
 )
 
 rooms = {}
@@ -111,5 +111,6 @@ def disconnect():
 if __name__ == "__main__":
     port = int(os.getenv("PORT", 5000))
     socketio.run(app, host='0.0.0.0', port=port)
+
 
 
