@@ -22,7 +22,7 @@ Modern, minimal real-time chat application built with Flask and WebSockets. Quic
 
   
 
-Try a quick demo of the app by clicking [here](https://quickchatpython.onrender.com).
+Try a quick demo of the app by clicking [here](https://quickchat-mpzx.onrender.com/).
 
 Screenshots:
 ![HomePage](/assets/home.PNG "Home Page")
