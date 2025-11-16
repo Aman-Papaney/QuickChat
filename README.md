@@ -11,7 +11,7 @@ Modern, minimal real-time chat application built with Flask and WebSockets. Quic
 
   
 
--  Provide a small, focused example of real-time web features.
+-  Provide a prctical view on real-time web features.
 
 -  Show practical use of Flask + Socket.IO in a lightweight codebase.
 
