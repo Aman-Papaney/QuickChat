@@ -1,0 +1,55 @@
+
+{% extends "base.html" %}
+{% block content %}
+<div class="page-wrapper">
+  <div class="card">
+    <div class="card-header">
+      <h1 class="title">Welcome to Chatter</h1>
+      <p class="subtitle">Join a room or create a new one to start chatting.</p>
+    </div>
+
+    <form method="post" class="form">
+      <div class="field">
+        <label for="name">Display name</label>
+        <input
+          id="name"
+          type="text"
+          name="name"
+          placeholder="e.g. Aman"
+          value="{{ name }}"
+          required
+        />
+      </div>
+
+      <div class="field">
+        <label for="code">Room code</label>
+        <div class="room-row">
+          <input
+            id="code"
+            type="text"
+            name="code"
+            placeholder="Enter a room code"
+            value="{{ code }}"
+          />
+          <button type="submit" name="join" class="btn primary">
+            Join
+          </button>
+        </div>
+        <p class="hint">Have a code? Join an existing room.</p>
+      </div>
+
+      <div class="divider">
+        <span>or</span>
+      </div>
+
+      <button type="submit" name="create" class="btn outline full">
+        Create a new room
+      </button>
+
+      {% if error %}
+      <p class="error">{{ error }}</p>
+      {% endif %}
+    </form>
+  </div>
+</div>
+{% endblock %}
