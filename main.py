@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = Flask(__name__)
-app.config["SECRET_KEY"] = os.getenv("SECRET_KEY", "vjnn49h%^$f")
+app.config["SECRET_KEY"] = os.getenv("SECRET_KEY")
 socketio = SocketIO(app, cors_allowed_origins="*")
 
 rooms = {}
@@ -106,4 +106,5 @@ def disconnect():
 
 if __name__ == "__main__":
     port = int(os.getenv("PORT", 5000))
-    socketio.run(app, debug=True, port=port)
+    socketio.run(app, host='0.0.0.0', port=port)
+
